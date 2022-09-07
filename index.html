@@ -1,0 +1,310 @@
+<html>
+	<head>
+	<title>Home</title>
+<link rel=icon href=img/ML.png>
+		<style>
+
+			
+			a
+			{
+				color:black
+			}
+			.block 
+			{
+			  display: block;
+			  width: 30%;
+			  border: none;
+			  background-color: #ffff4d;
+			  padding: 14px 28px;
+			  font-size: 16px;
+			  cursor: pointer;
+			  text-align: center;
+			}
+
+			/* Container needed to position the button. Adjust the width as needed */
+				.container {
+				  position: relative;
+				  width: 100%;
+
+				}
+
+				/* Make the image responsive */
+				.container img {
+				  width: 100%;
+				  height: auto;
+				}
+
+				/* Style the button and place it in the middle of the container/image */
+				.container .btn {
+				  position: absolute;
+				  top: 20%;
+				  left: 50%;
+				  transform: translate(-50%, -50%);
+				  -ms-transform: translate(-50%, -50%);
+				  background-color: #ffdb4d;
+				  color: black;
+				  font-size: 40px;
+				  padding: 12px 24px;
+				  border: none;
+				  cursor: pointer;
+				  border-radius: 5px;
+				   font-weight: 900;
+				}
+
+				.container .btn:hover {
+				  background-color: none;
+				}
+
+
+
+					.wrap {
+						    width: 100%;
+						    overflow:auto;
+						}
+
+						.fleft {
+						    float:left; 
+						    width: 33%;
+						    height: 400px;
+						}
+
+						.fcenter{
+						    float:left;
+						    width: 33%;
+						    height:400px;
+						    margin-left:0.25%;
+						}
+
+						.fright {
+						float: right;
+						    height: 400px;
+						    width: 33.5%;
+						    
+						}
+						.r_button {
+									  background-color:#ffdb4d;
+									  border: none;
+									  color: black;
+									  padding: 15px 32px;
+									  text-align: center;
+									  text-decoration: none;
+									  display: inline-block;
+									  margin: 4px 2px;
+									  cursor: pointer;
+									   font-weight: 900;
+									   font-size: 20px;
+									}
+									
+									.dimg {
+											  display: block;
+											  margin-left: auto;
+											  margin-right: auto;
+											  width: 70%;
+											  height: 130px;
+											}
+
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.mySlides {display:none}
+			.w3-left, .w3-right, .w3-badge {cursor:pointer}
+			.w3-badge {height:13px;width:13px;padding:0}
+		</style>
+	</head>
+	<body bgcolor= #ffffff link=black>
+		<img src="img/line.png" width=100%>
+
+		<table >
+			<tr >
+				<th> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="img/ML.png" width=200 height=70>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</th>
+				<th><img src="img/side.png" width=250 height=80></th>
+				
+			</tr>
+			</table>
+			<div class="w3-container">
+  
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:100%">
+  <img class="mySlides" src="img/sm.png" style="width:100%">
+  <img class="mySlides" src="img/sm.png" style="width:100%">
+  <img class="mySlides" src="img/sm.png" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+	  showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("demo");
+	  if (n > x.length) {slideIndex = 1}
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" w3-white", "");
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " w3-white";
+	}
+</script>
+		<div class="container">
+			  <img src="img/bi.png" alt="Snow">
+			  <a href = "www.facebook.com"><button class="btn">Broadcasting Schedule</button></a>
+		</div><br><br><br><br>
+			<div class="wrap">
+    
+    <div class="fleft"><img src="img/p1.png"><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button  class="r_button">Register Now</button><br>&emsp;&emsp;&emsp;&emsp;<img src="img/youtube.png">&nbsp;<img src="img/linkedin.png"></div>
+    <div class="fcenter"><img src="img/p2.png"><br>&emsp;<button  class="r_button">Register Now</button><br><img src="img/youtube.png">&nbsp;<img src="img/linkedin.png"></div>
+    <div class="fright"><img src="img/p3.png"><br><button  class="r_button">Register Now</button><br><img src="img/youtube.png">&nbsp;<img src="img/linkedin.png"></div>
+</div>
+
+
+<div style="background-color: #363630;" >
+	
+	<img align="center" src="img/dimg.png" class="dimg"><br><br><br>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+	<table style width="100%";>
+		<tr>
+				<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<embed
+			    src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=1"
+			    wmode="transparent"
+			    type="video/mp4"
+			    width="30%" height="30%"
+			    allow="autoplay; encrypted-media; picture-in-picture"
+			    allowfullscreen
+			    title="Keyboard Cat"
+			  >
+			  </td>
+			  <td>
+			  <embed
+			    src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=1"
+			    wmode="transparent"
+			    type="video/mp4"
+			    width="60%" height="60%"
+			    allow="autoplay; encrypted-media; picture-in-picture"
+			    allowfullscreen
+			    title="Keyboard Cat"
+			  >
+			  </td>
+			  <td >
+			  <embed
+			    src="https://www.youtube.com/embed/J---aiyznGQ?autohide=1&autoplay=1"
+			    wmode="transparent"
+			    type="video/mp4"
+			    width="60%" height="60%"
+			    allow="autoplay; encrypted-media; picture-in-picture"
+			    allowfullscreen
+			    title="Keyboard Cat"
+			  >
+			</td>
+		</tr>
+		<tr>
+			<td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#fff">LOREM IPSUM DOLOR<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;SIT AMET,<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;CONSECTETUER</font></td>
+			<td><font color="#fff">LOREM IPSUM DOLOR<br>
+SIT AMET,<br>
+CONSECTETUER</font></td>
+			<td><font color="#fff">LOREM IPSUM DOLOR<br>
+SIT AMET,<br>
+CONSECTETUER</font></td>
+		</tr>
+</table>
+
+<br><br><br>
+
+	<table style width="100%";>
+		<tr>
+				<td >&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="img/img4.png">
+			  </td>
+			  <td>
+			  <img src="img/img4.png">
+			  </td>
+			  <td >
+			  <img src="img/img4.png">
+			</td>
+			<td >
+			  <img src="img/img4.png">
+			</td>
+		</tr>
+		<tr>
+			<td>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<font color="#fff">LOREM IPSUM DOLOR SIT AMET,<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Lorem ipsum dolor sit<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;amet, consectetuer<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;adipiscing elit, sed diam</font></td>
+			<td ><font color="#fff">LOREM IPSUM DOLOR SIT AMET<br>
+				Lorem ipsum dolor sit<br>
+				amet, consectetuer<br>adipiscing elit, sed diam</font>
+			</td>
+			<td><font color="#fff">LOREM IPSUM DOLOR SIT AMET<br>
+				Lorem ipsum dolor sit<br>
+				amet, consectetuer<br>adipiscing elit, sed diam</font>
+			</td>
+<td><font color="#fff">LOREM IPSUM DOLOR SIT AMET<br>
+				Lorem ipsum dolor sit<br>
+				amet, consectetuer<br>adipiscing elit, sed diam</font>
+			</td>
+		</tr>
+</table>
+
+</div>
+<br><br>
+<div class="container"  >
+			  <a href = "www.facebook.com"><br><br><button class="btn">Our Partner</button></a>
+		</div>
+		<img src="img/img3.png" alt="Snow" width=100%>
+		<img src="img/wimg.png" alt="Snow" height =100% width=100%>
+
+		<div style="background-color: black;">
+
+		<table>
+
+		<th><img src="img/mm.png">&emsp;&emsp;&emsp;&emsp;</th><th style="color:white">Sample Meenu&emsp;&emsp;&emsp;&emsp;</th><th  style="color:white">Sample Meenu&emsp;&emsp;&emsp;&emsp;</th><th  style="color:white">LOREM IPSUM</th>
+		<tr>
+			<td>
+				<a href ="https://www.facebook.com/"><img src="img/facebook.png"></a><a href ="https://www.twitter.com/"><img src="img/twitter.png"></a><a href ="https://www.youtube.com/"><img src="img/yt.png"></a><a href ="https://www.instagram.com/"><img src="img/insta1.png"></a><a href ="https://www.linkedin.com/"><img src="img/link.png">	
+			</td>
+			<td><ul type= 'none'>
+				<li style="color:white">Sample Meenu</li>
+				<li style="color:white">Sample Meenu</li>
+				<li style="color:white">Meenu</li>
+				<li style="color:white">Meenu</li>
+				</ul>
+			</td>
+			<td><ul type= 'none'>
+				<li style="color:white">Sample Meenu</li>
+				<li style="color:white">Sample Meenu</li>
+				<li style="color:white">Meenu</li>
+				<li style="color:white">Meenu</li>
+				</ul>
+			</td>
+			<td><ul type= 'none'>
+				<li><img src="img/home.png"><p style="color:white">B-201, SPIREA, Wakad, Pune - 411 057</p></li>
+				<li><img src="img/email.png"><p style="color:white">info@themachinemaker.com</p></li>
+				<li><img src="img/phone.png"><p style="color:white">+91-703-093-2700</p></li>
+				</ul>
+			</td>
+		</tr>
+</table>
+</div>
+  </body>
+</html>
